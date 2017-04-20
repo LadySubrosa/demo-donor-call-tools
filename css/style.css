@@ -1,0 +1,173 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
+body{
+	padding-bottom: 40px;
+	padding-top: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:link, a:hover, a:visited, a:focus{
+	color: #148ba9;
+}
+
+
+h1{
+	color:#112b3a;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: -2px;
+}
+
+h2{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+
+#call_actions{
+	display:block;
+	margin-top:10px;
+}
+
+#call_now_button{
+	margin-bottom: 10px;
+}
+
+#call_ask{
+	margin-top:5px;
+}
+
+.navbar h3{
+	margin:5px;;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+a.btn.editable:link, a.btn.editable:active, a.btn.editable:visited, a.btn.close_form:link, a.btn.close_form:active, a.btn.close_form:visited{
+	color: #148ba9;
+	margin-left: 5px;
+}
+
+.navbar-inverse #nav.navbar-inner{
+	background: #112b3a; /*blue*/
+}
+
+.navbar-inverse #call_bar{
+	background: #148ba9; /* teal */
+}
+
+.navbar-inverse #call_expanded.navbar-inner{
+	background: #e3e3e3; /*light grey*/
+}
+
+#call_expanded{
+	display:none;
+	position: relative;
+}
+
+.inline, .section_title{
+	display: inline-block;
+}
+
+.btn{
+	border-radius: 0;
+	text-transform: uppercase;
+}
+
+a.btn:link, a.btn:visited, a.btn:hover, a.btn:focus{
+	color: #fff;
+	display: inline-block;
+}
+
+.btn-primary{
+	color: #fff;
+	background: #148ba9;
+	border: solid 2px #fff;
+}
+
+.btn-white{
+	background: #fff;
+	color: #148ba9;
+	border: solid 2px #fff;
+}
+
+.btn-red{
+	color: #fff;
+	background:  #d91f00;
+	border: solid 2px #fff;
+}
+
+.btn-sub.btn-white{
+	color: #d91f00;
+}
+
+.grey{	
+background: #e3e3e3;
+}
+
+#bio_stats{
+	margin-top: 1em;
+}
+
+#call_script{
+
+	margin: 20px 1em;
+}
+
+#call_script ul li{
+	font-size: 12px;
+}
+
+#duration{
+	color: #fff;
+	font-size: .8em;
+	font-style: italic;
+	text-transform: capitalize;
+}
+
+#duration_ask{
+	margin-top:10px;
+}
+
+#duration_time{
+	font-weight: bold;
+	font-style: normal;
+}
+
+#call_ask_open{
+	font-size: .9em;
+	line-height: 1em;
+}
+
+.active_edit{
+	color: #e3e3e3;
+	
+}
+
+.dl-horizontal dt{
+	text-align: left;
+}
+
+.hide_button{
+	display:none;
+}
+
+#call_progress{
+display: none;
+
+}
+
+.navbar h3.popover-title {
+	color: #d91f00;
+}
+
+label{
+	text-transform: capitalize;
+}
+
+.popover{
+	max-width: 600px;
+}

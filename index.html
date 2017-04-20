@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+ <div id="top_nav" class="navbar navbar-inverse navbar-fixed-top">
+      <div id="nav" class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Bold Progressives</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Dashboard</a></li>
+              <li><a href="#custom_lists">Custom Lists</a></li>
+              <li><a href="#call_scriptst">Call Scripts</a></li>
+              <li><a href="#report_bug">Report Bug</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+ </div>
+  <div id="second_nav" class="navbar navbar-inverse navbar-static-top">
+       <div id="call_bar" class="navbar-inner">
+        <div class="container">
+              <div id="call_now"><a id="call_now_button" class="btn btn-white" class="show_button">Call Now</a>	<h3 id="call_ask" class="inline">Ask For: $<span id="ask_amount">500</span></h3>
+
+              </div>
+
+			  			
+			  <div id="call_progress">
+			  	<h3 class="inline">Call Progress</h3> 
+			  	<div id="duration_ask" class="inline">
+			  				  		<div id="duration">Call Duration: 
+			  			<span id="duration_time">00:00:00</span>
+			  		</div>
+			 <h3 id="call_ask_open" >Ask For: $<span id="ask_amount_open">500</span></h3>
+
+
+			  	</div>
+			  	<div id="call_actions" class="pull-right">
+			  <a class="btn btn-white" id="notes_button" ><span>Add Notes</span></a>
+			  <a class="btn btn-white" id="cancel" >Cancel</a>
+			  <a class="btn btn-white" id="end_continue" ><span>End</span></a>
+			  <a class="btn btn-white btn-sub" id="submit" >Submit Call</a>
+			  	</div>
+			  </div>
+			  </div>
+        </div></div> 
+          <div id="call_expanded" class="navbar-inner">
+        <div class="container">  
+        <hr/>   
+      <form id="call_form">  
+        <div class="row">
+      <div class="span4">
+        <div class="control-group">
+      <select>
+  <option value="">Reached?</option>
+  <option value="yes">Yes</option>
+  <option value="message">Message</option>
+  <option value="no">No</option>
+</select>
+        </div>
+  <div class="control-group">
+    <label class="control-label" for="inputReason">Reason for Calling</label>
+    <div class="controls">
+      <textarea rows="4" id="inputReason"></textarea>
+    </div>
+  </div>
+      </div>
+      
+      <div class="span8">
+  <div class="control-group">
+    <label class="control-label" for="inputNotes">Notes</label>
+    <div class="controls">
+      <textarea rows="4" class="input-xxlarge" ></textarea>
+    </div>
+  </div>
+    <div class="control-group">
+    <label class="control-label" for="inputResult">Result</label>
+    <div class="controls">
+      <textarea rows="2" class="input-xxlarge" ></textarea>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="inputRaised">Amount Raised</label>
+    <div class="input-prepend input-append">
+  <span class="add-on">$</span>
+  <input class="span2" id="appendedPrependedInput" type="text">
+  <span class="add-on">.00</span>
+</div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <label class="checkbox" class="inline">
+        <input type="checkbox" id="inputSuccess"> Success?
+      </label>
+      <button type="submit" class="btn btn-white btn-sub">Submit Call</button>
+    </div>
+  </div>
+      </div>
+        </div>
+</form>
+        
+        
+        </div></div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+    
+	  <div class="span4 grey">
+	  <div id="call_script">
+	  <h2>Call Script</h2>
+	  <ul class="nav nav-pills">
+  <li class="active">
+    <a href="#">Customize</a>
+  </li>
+  <li><a href="#">Alternate</a></li>
+  <li><a href="#">Phone Tips</a></li>
+</ul>
+<p id="script_text">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, sem in pellentesque accumsan, risus mauris porta mi, sit amet placerat libero ligula in velit. Nullam commodo erat non sem blandit quis gravida erat consequat. Proin nec ligula semper urna aliquam elementum. Fusce a tellus quis lacus elementum commodo. Praesent ut augue ante, vitae pharetra lorem. Curabitur adipiscing fringilla mattis. Mauris aliquet augue vitae ante dictum adipiscing. Suspendisse eu porta dui. Vivamus interdum turpis a lorem viverra consectetur. Fusce ac semper diam. Maecenas non felis vel nisl imperdiet lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse imperdiet, ipsum at lobortis mattis, felis orci ullamcorper purus, vel luctus orci enim vel libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p></div>
+	  </div><!--/span4-->
+	  <div class="span8">
+      <h1 class="inline">Don Donor</h1>
+      <div class="pull-right"><em>Last Activity: 2/15/13 2:43 PM ET</em></div>
+      
+      <div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Quick Stats</a></li>
+    <li><a href="#tab2" data-toggle="tab">Full History</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+    
+    <a href="#" id="add_call" class="btn btn-red">Add Call</a><a href="mailto:don.donor@mail.com" class="btn btn-red"><i class="icon-envelope icon-white"></i>    Send Email</a>
+    <div class="pull-right"><em>Related: <a href="#">Donna Donor[+]</a>, <a href="#">Fred Flinstone[+]</a></em></div>
+   <div id="bio_stats">
+   <div class="row-fluid">
+   <div class="span5">
+   <form id="bio_info">	  
+   <div id="contact">
+   <h4 class="section_title">Contact</h4><a href="#" id="edit_contact" class="editable btn btn-small"><i class="icon-pencil"></i> Edit</a>
+   		<address class="vcard">
+	   	<span id="telephone" class="tel field">(123) 123-4567</span><br/>
+	   	<div id="address"class="adr field"><div class="street-address">123 Address Street</div>
+	   	<span id="city" class="locality field">Austin</span>, <span id="state" class="region field">TX</span>&nbsp;&nbsp;<span id="zipcode" class="postal-code field">78705</span>
+	   	</div>
+	   	<span class="email"><i class="icon-envelope"></i> <a href="#" id="email_address" class="field">don.donor@mail.com</a></span><br/>
+	   	<a href="#" class="field social_media">Facebook</a><br/>
+	   	<a href="#" class="field social_media">LinkedIn</a>
+	   	</address>
+   </div>
+   <div id="donation_stats">
+		  <dl class="dl-horizontal">
+  <dt>Ask Amount</dt>
+  <dd>$<span class="ask_amount">500</span></dd>
+  <dt>Last Donated</dt>
+  <dd>$<span class="last_amount">50</span></dd>
+  <dt>Highest</dt>
+  <dd>$<span class="highest_amount">1000</span></dd>
+  <dt>Average</dt>
+  <dd>$<span class="avg_amount">200</span></dd>
+  <dt>Probability</dt>
+  <dd><span class="probability">80</span>%</dd>
+</dl>
+
+</div>
+
+
+	
+   </div>
+
+   <div class="offset1 span6">
+	  <div id="demographic"> 
+	  <h4 class="section_title">Demographic Information</h4><a href="#" id="edit_demo" class="editable btn btn-small"><i class="icon-pencil"></i> Edit</a>
+		  <dl class="dl-horizontal">
+  <dt>Gender</dt>
+  <dd><span id="gender">Male</span></dd>
+  <dt>Age</dt>
+  <dd><span id="age" class="field">43</span></dd>
+  <dt>Ethnicity</dt>
+  <dd><span id="ethnicity"class="field">Hispanic</span></dd>
+  <dt>Marital Status</dt>  
+  <dd><span id="marital" class="field">Married</span></dd>
+  <dt>Children</dt>
+  <dd><span id="number_of_children" class="field">2</span></dd>
+		  </dl>
+	  </div>
+		  
+  <div id="causes" >
+  <h4 class="section_title">Causes</h4><a href="#" id="edit_causes" class="editable btn btn-small"><i class="icon-pencil"></i> Edit</a>
+  <ul class="inline">
+  <li class="field cause_field"><a href="#" class="removable">Environment</a></li>
+  <li class="field cause_field"><a href="#" class="removable">Medicare</a></li>
+  </ul>
+  </div>
+  <div id="cares_about">
+  <h4 class="section_title">Cares about</h4><a href="#" id="edit_cares_about" class="editable btn btn-small"><i class="icon-pencil"></i> Edit</a>
+  <ul class="inline">
+  <li class="field cause_field"><a href="#" class="removable">Warren</a></li>
+  <li class="field cause_field"><a href="#" class="removable">Raise Minimum Wage</a></li>
+  </ul>
+  <a href="#">+4 More</a>
+  </div>
+	  </div>
+    
+   </div>
+   </div>
+   
+   <hr/>
+   <div id="last_call">
+<h4>Notes from Last Call</h4>
+<em id="last_notes">Voted for Obama. Oldest son in College. Mother in Hospital</em>
+</div>
+   <hr/>
+   <div id="bio">
+   <h4 class="inline section_title">Bio</h4><a href="#" id="edit_bio" class="editable btn btn-small"><i class="icon-pencil"></i> Edit</a>
+   <div class="field textarea">
+	   <p>Maecenas vestibulum sem vel ante fermentum a pharetra nisl facilisis. Nam lacinia consectetur lacinia. Mauris sit amet ipsum leo, eu tincidunt sem. Ut tincidunt, diam nec scelerisque pretium, sapien metus porttitor mauris, eget ultrices dolor eros vitae lectus. Maecenas vel leo in tortor placerat malesuada nec at dolor. Vivamus aliquam commodo facilisis. Ut elit ligula, commodo at porta vel, eleifend eget dolor. Vivamus mollis, sem quis euismod semper, dui orci varius nulla, non mattis lectus diam ac metus. Integer tortor sem, malesuada eu laoreet vel, sodales ac ligula. Vestibulum at turpis ipsum. Donec eleifend odio ut leo faucibus dignissim. Suspendisse luctus consectetur elit ac dapibus. Mauris pharetra pellentesque turpis eu aliquet. Maecenas non orci quis libero feugiat aliquam.</p>
+   </div>
+  </div> 
+  </div>
+       
+    <div class="tab-pane" id="tab2">
+    <h2>
+    Full History
+    </h2>
+        </div>
+  </div>
+</div>
+
+      
+         
+       </div><!--/span8-->
+    </div><!--/row-->
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.stopwatch.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
