@@ -1,4 +1,5 @@
-$(document).ready(function(){
+(function($){
+	(document).ready(function(){
 
 function pop_form_title(section){
 	return 'Edit '+section.parent().find('.section_title').text();
@@ -229,3 +230,4 @@ $("#end_continue").click(function(e){
 
 
 });
+})(jQuery);
